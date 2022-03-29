@@ -40,6 +40,7 @@ body{
 .box{
     border-radius: 7px;
     padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .textbox1{
@@ -61,8 +62,10 @@ body{
     display: flex;
     gap: 20px;
     line-height: .5;
+    color: var(--White);
     
 }
+
 .flex-data img{
     border-radius: 50%;
     border: 2px solid var(--White);
@@ -91,16 +94,13 @@ body{
 
 
 
-@media only screen and (max-width: 600px) {
+  @media only screen and (min-width: 800px) {
     .text-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
+       
+        grid-template-columns: repeat(4,1fr) ;
         grid-template-rows: 1fr 1fr ;
         grid-template-areas: 
         "one one two  five "
         "three four four five";
-    }
-    body{
-        background-color: aqua;
     }
   }
