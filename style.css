@@ -42,6 +42,7 @@ body{
 }
 
 .container{
+    margin: 0 auto;
     padding: 30px;
 }
 
